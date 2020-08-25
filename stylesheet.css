@@ -7,24 +7,51 @@ html {
 body {
 	width: 99%;
 
-	
 	background-color: pink;
 	
 	font-family: Verdana, Geneva, sans-serif;
 	font-style: normal;
 }
 
+@media only sscreen and (max-width: 600px) {
+	body {
+		background-color: cyan;
+	}
+}
+
 header {
+	position: relative;
+	height: 100px;
 	width: 100%;
 	
 	background-color: darkslategray;
 	
+}
+
+header div.vertical-center{
+	position: absolute;
+	top: 35%;
+	/*height: 10%;*/
+	width: 80%;
+	
+	border: 1px solid black;
+	
+	color: pink;
 	text-align: center;
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+header h1 {
+	position: absolute;
+	color: pink;
 }
 
 aside {
 	float:right;
 	width: 19%;
+	
+	padding-left: 12px;
 	
 	background-color: darkcyan;
 }
@@ -38,9 +65,11 @@ section{
 
 }
 
-section div {
+section div.panel {
 	display: block;
 	height: 50%;
+	
+	background-color: lightslategray;
 	
 	overflow-y: scroll;
 	scroll-behavior: smooth;
@@ -52,7 +81,7 @@ nav {
 	height: 50%;
 	
 	padding-left: 6px;
-	border: 2px solid darkcyan;
+	border: 1px solid darkcyan;
 	
 	background-color: teal;
 }
@@ -73,10 +102,14 @@ nav ul li a:hover{
 
 article {
 	float: right;
-	height: 120px;
-	width: 85%;
+	height: auto;
+	width: 95%;
 	
 	padding-left:6px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	
+	margin-bottom: 6px;
 	border: 1px solid white;
 	
 	background-color: darkcyan;
@@ -95,7 +128,7 @@ section:after {
 footer {
 	display: block;
 	float: left;
-	width: 100%;
+	width: 80%;
 	
 	background-color: darkslategray;
 	
