@@ -1,0 +1,94 @@
+html {
+	background-color: cyan;
+	padding: 0px;
+	margin: -22px 0px 0px -8px;
+	
+}
+
+body {
+	font-family: 'Tahoma', sans-serif;
+	font-style: normal;
+	
+	background-color: pink;
+	width: 99%;
+}
+
+header {
+	background-color: lightslategrey;
+	text-align: center;
+	width: 80%;
+}
+
+aside {
+	float:right;
+	background-color: slategray;
+	width: 19%
+	
+}
+
+section{
+	display: block;
+	background-color:darkslategray;
+	width: 80%;
+}
+
+
+nav {
+	float: left;
+	height: 400px;
+	width: 10%;
+	
+	background-color: teal;
+	
+}
+
+nav ul {
+	list-style-type: none;
+}
+	
+
+article {
+	float: right;
+	height: 120px;
+	width: 85%;
+	background-color: grey;
+	border: 1px solid white;
+	font-size: 12px;
+	
+}
+
+
+
+	
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+footer {
+	display: block;
+	float: left;
+	width: 80%;
+	background-color: grey;
+	text-align: center;
+}
+
+footer p {font-size: 8px;}
+
+
+
+
+h1 {
+	color: white;
+}
+	
+p {
+	color: whitesmoke;
+}
+
+
+
