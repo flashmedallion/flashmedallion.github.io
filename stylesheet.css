@@ -5,7 +5,10 @@ html {
 }
 
 body {
-	width: 99%;
+	display: block;
+	width: 100%;
+
+    margin: 0px;
 
 	background-color: pink;
 	
@@ -13,7 +16,7 @@ body {
 	font-style: normal;
 }
 
-@media screen and (orientation: portrait) {
+@media all and (max-width: 320px) and (min-height: 320px) {
 	body {
 		background-color: cyan;
 	}
@@ -49,12 +52,17 @@ header h1 {
 
 aside {
 	float:right;
-	width: 19%;
+	width: 18%;
 	
 	padding-left: 12px;
+	padding-right: 12px;
 	
 	background-color: darkcyan;
 }
+
+aside p{
+	font-size: 12px;
+	}
 
 section{
 	display: block;
