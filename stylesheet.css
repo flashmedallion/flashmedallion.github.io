@@ -16,11 +16,21 @@ body {
 	font-style: normal;
 }
 
-@media all and (orientation:portrait) {
+@media only screen and (max-device-width:640px) {
 	body {
-		background-color: cyan!important;
+		background-color: cyan;
 	}
 }
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+	header {
+		background-color: red;
+	}
+
+}
+
+
 
 header {
 	position: relative;
