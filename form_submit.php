@@ -1,9 +1,20 @@
+
+<!DOCTYPE HTML>  
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>  
+
 <?php
 $host = "localhost";
 $db_name = "dev_to";
 $username = "root";
-$password = "password";
+$password = "DMS1551nobreaktable";
 $connection = null;
+
 try{
 $connection = new PDO("mysql:host=" . $host . ";dbname=" . $db_name, $username, $password);
 $connection->exec("set names utf8");
@@ -13,7 +24,7 @@ echo "Connection error: " . $exception->getMessage();
 
 function saveData($name, $email, $message){
 global $connection;
-$query = "INSERT INTO test(name, email, message) VALUES( :name, :email, :message)";
+$query = "INSERT INTO flashsite(name, email, message) VALUES( :name, :email, :message)";
 
 $callToDb = $connection->prepare( $query );
 $name=htmlspecialchars(strip_tags($name));
@@ -41,3 +52,6 @@ else{
 echo '<h3 style="text-align:center;">A very detailed error message ( ͡° ͜ʖ ͡°)</h3>';
 }
 ?>
+
+</body>
+</html>
